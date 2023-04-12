@@ -11,9 +11,11 @@ return require('packer').startup(function(use)
   }
 
 
-  use({ 'rose-pine/neovim', as = 'rose-pine' })
+--   use({ 'rose-pine/neovim', as = 'rose-pine' })
 
-  vim.cmd('colorscheme rose-pine')
+--   vim.cmd('colorscheme rose-pine')
+
+  use 'navarasu/onedark.nvim'
 
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use ('theprimeagen/harpoon')
