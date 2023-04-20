@@ -13,4 +13,8 @@ vim.api.nvim_set_keymap('n', '<leader>pv', ':NvimTreeToggle<CR>', { noremap = tr
 vim.api.nvim_set_keymap('n', '<leader>pb', ':NvimTreeFocus<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>pn', ':NvimTreeFocus<CR>', { noremap = true, silent = true })
 
-require("nvim-tree").setup()
+require("nvim-tree").setup{
+    view = {
+		side = "left",
+	}
+}
